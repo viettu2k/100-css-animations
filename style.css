@@ -211,3 +211,71 @@ body {
 #image-clip-path img:hover {
   clip-path: polygon(100% 100%, 100% 0, 100% 100%, 0% 100%);
 }
+
+/* image circle hover effect using CSS clip path property */
+
+#image-circle-clip-path {
+  position: relative;
+  width: 100%;
+  min-width: 300px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#image-circle-clip-path .img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+  clip-path: circle(70.7% at 50% 50%);
+}
+
+#image-circle-clip-path img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+#image-circle-clip-path:hover .img {
+  clip-path: circle(18.2% at 50% 38%);
+}
+
+#image-circle-clip-path .content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+#image-circle-clip-path a {
+  margin-bottom: 2rem;
+  display: inline-block;
+  padding: 10px 10px;
+  border: 1px solid white;
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+  text-transform: capitalize;
+}
+
+#image-circle-clip-path a {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+#image-circle-clip-path:hover a {
+  opacity: 1;
+  transition-delay: 0.5s;
+}
+
+#image-circle-clip-path a:hover {
+  color: black;
+  background-color: white;
+}
