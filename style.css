@@ -318,3 +318,26 @@ body {
 #black-white-clip-path h5:nth-child(1):hover ~ h5 {
   clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 }
+
+/* CSS popup effect using CSS clip path property */
+
+#popup-clip-path {
+  width: 300px;
+  height: 200px;
+  background-color: #c7ecee;
+  padding: 1rem;
+  transition: all 0.5s;
+  clip-path: circle(7% at 93% 20%);
+}
+
+#popup-clip-path h1 {
+  margin-bottom: 20px;
+}
+
+#popup-clip-path p {
+  font-size: 18px;
+}
+
+#popup-clip-path:hover {
+  clip-path: circle(70%);
+}
