@@ -868,3 +868,54 @@ body {
     transform: scaleY(0.1);
   }
 }
+
+/* nice loading effect with CSS animation */
+
+#nice-loader {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#nice-loader span {
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+#nice-loader span:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  animation: niceLoader 1s linear infinite;
+}
+
+@keyframes niceLoader {
+  0% {
+    width: 100%;
+    height: 100%;
+  }
+  100% {
+    width: 0;
+    height: 0;
+  }
+}
+
+#nice-loader .s4:before,
+.s5:before,
+.s6:before {
+  animation-delay: 0.1s;
+}
+
+#nice-loader .s7:before,
+.s8:before,
+.s9:before {
+  animation-delay: 0.2s;
+}
