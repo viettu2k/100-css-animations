@@ -1113,3 +1113,41 @@ body {
     transform: rotate(360deg);
   }
 }
+
+/* pre loading effect with CSS animation */
+
+#pre-loading {
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color: white;
+  position: relative;
+}
+
+#pre-loading:before {
+  content: "loading..";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #f6b93b;
+  overflow: hidden;
+  border-right: 4px solid #f6b93b;
+  animation: preLoading 5s linear infinite;
+}
+
+@keyframes preLoading {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0;
+  }
+}
