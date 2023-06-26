@@ -1380,3 +1380,48 @@ body {
     transform: rotate(0deg);
   }
 }
+
+/* Changing background color with css animations */
+
+#change-bg {
+  height: 200px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  animation: bgchange 20s infinite;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  text-transform: capitalize;
+  color: white;
+}
+
+@keyframes bgchange {
+  0% {
+    background-color: #272727;
+  }
+
+  20% {
+    background-color: blue;
+  }
+
+  40% {
+    background-color: tomato;
+  }
+
+  60% {
+    background-color: lightblue;
+  }
+
+  80% {
+    background-color: darkgreen;
+  }
+
+  100% {
+    background-color: #272727;
+  }
+}
