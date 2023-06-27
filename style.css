@@ -1425,3 +1425,39 @@ h1 {
     background-color: #272727;
   }
 }
+
+/* simple images slider show with css animations */
+
+#slider {
+  width: 300px;
+  height: 200px;
+  background: url(/assets/image-circle-hover-clip-path.jpg);
+  animation: sliderImage 6s linear infinite;
+}
+
+@keyframes sliderImage {
+  0% {
+    background: url(/assets/image-circle-hover-clip-path.jpg);
+  }
+  20% {
+    background: url(/assets/image-circle-hover-clip-path.jpg);
+  }
+  25% {
+    background: url(/assets/image-hover-clip-path.jpg);
+  }
+  45% {
+    background: url(/assets/image-hover-clip-path.jpg);
+  }
+  50% {
+    background: url(/assets/images-hover-clip-path.jpg);
+  }
+  70% {
+    background: url(/assets/images-hover-clip-path.jpg);
+  }
+  75% {
+    background: url(/assets/image-hover-clip-path.jpg);
+  }
+  100% {
+    background: url(/assets/image-hover-clip-path.jpg);
+  }
+}
