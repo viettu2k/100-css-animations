@@ -1576,3 +1576,84 @@ h1 {
 #loading-text li:nth-child(7) {
   animation-delay: 1.2s;
 }
+
+/* Icon hover effect with CSS transition and animations */
+
+#icon-hover-effect {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+#icon-hover-effect li {
+  list-style-type: none;
+  width: 100px;
+  height: 100px;
+  margin: 0 20px;
+  border: 2px solid #0a3d62;
+  border-radius: 50%;
+  transition: all 0.5s;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#icon-hover-effect li i {
+  font-size: 48px;
+  color: #0a3d62;
+  transition: 0.5s;
+}
+
+#icon-hover-effect li:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0a3d62;
+  border-radius: 50%;
+  transition: all 0.5s;
+  opacity: 0;
+  z-index: -1;
+}
+
+#icon-hover-effect li:hover:before {
+  opacity: 1;
+  transform: scale(0.8);
+}
+
+#icon-hover-effect li:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px dashed #2e86de;
+  transition: all 0.5s;
+  opacity: 0;
+  z-index: -1;
+  box-sizing: border-box;
+}
+
+#icon-hover-effect li:hover:after {
+  opacity: 1;
+  animation: iconHoverEffect 10s linear infinite;
+}
+
+@keyframes iconHoverEffect {
+  0% {
+    transform: scale(0.92) rotate(0deg);
+  }
+  100% {
+    transform: scale(0.92) rotate(360deg);
+  }
+}
+
+#icon-hover-effect li:hover i {
+  color: white;
+}
