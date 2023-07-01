@@ -1657,3 +1657,58 @@ h1 {
 #icon-hover-effect li:hover i {
   color: white;
 }
+
+/* bouncing balls with animation */
+
+.items-end {
+  align-items: flex-end;
+}
+
+#bouncing-balls {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  border-bottom: solid 10px white;
+}
+
+#bouncing-balls li {
+  list-style: none;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  margin: 0 10px;
+  border-radius: 50%;
+  animation: boucingBalls 0.8s linear infinite;
+}
+
+@keyframes boucingBalls {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-150px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#bouncing-balls li:nth-child(1) {
+  animation-delay: 0.45s;
+}
+
+#bouncing-balls li:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+#bouncing-balls li:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+#bouncing-balls li:nth-child(4) {
+  animation-delay: 0;
+}
+
+#bouncing-balls li:nth-child(5) {
+  animation-delay: 0.1s;
+}
