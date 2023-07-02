@@ -1712,3 +1712,30 @@ h1 {
 #bouncing-balls li:nth-child(5) {
   animation-delay: 0.1s;
 }
+
+/* animated text background with css animation */
+
+#bg-text-animation {
+  display: flex;
+  margin: auto;
+}
+
+#bg-text-animation h1 {
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  background: url(/assets/bg-text-animation.jpg);
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: text-background 20s linear infinite;
+}
+
+@keyframes text-background {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 100% 100%;
+  }
+}
