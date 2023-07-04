@@ -1795,3 +1795,67 @@ h1 {
     transform: rotate(45deg) scale(1);
   }
 }
+
+/* lighting text with css animation */
+#lighting-text {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+#lighting-text li {
+  list-style: none;
+  color: #484848;
+  font-size: 40px;
+  letter-spacing: 15px;
+  animation: lighting 1.4s linear infinite;
+}
+
+@keyframes lighting {
+  0% {
+    color: #484848;
+    text-shadow: none;
+  }
+
+  90% {
+    color: #484848;
+    text-shadow: none;
+  }
+
+  100% {
+    color: #fff900;
+    text-shadow: 0 0 7px #fff900, 0 0 50px #ff6c00;
+  }
+}
+
+#lighting-text li:nth-child(1) {
+  animation-delay: 0;
+}
+
+#lighting-text li:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+#lighting-text li:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+#lighting-text li:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+#lighting-text li:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+#lighting-text li:nth-child(6) {
+  animation-delay: 0.5s;
+}
+
+#lighting-text li:nth-child(7) {
+  animation-delay: 0.6s;
+}
+
+#lighting-text li:nth-child(8) {
+  animation-delay: 0.7s;
+}
