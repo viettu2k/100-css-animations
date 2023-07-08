@@ -1905,7 +1905,7 @@ h1 {
   animation: none;
 }
 
-/*  */
+/* animated button with css animations */
 
 #hover-button-2 {
   text-decoration: none;
@@ -1934,5 +1934,24 @@ h1 {
 
   100% {
     transform: rotate(10deg);
+  }
+}
+
+/* animated img pattern with css animations */
+
+#bg-img-animation {
+  height: 200px;
+  width: 300px;
+  background: url(./assets/bg-pattern.png);
+  background-position: 0 0;
+  animation: animated-pattern 15s linear infinite;
+}
+
+@keyframes animated-pattern {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 800px 600px;
   }
 }
