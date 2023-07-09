@@ -1955,3 +1955,27 @@ h1 {
     background-position: 800px 600px;
   }
 }
+
+/* loading effect with css animation */
+
+#loading-effect {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 12px;
+  animation: loadingEffect 2s linear infinite;
+}
+
+@keyframes loadingEffect {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+
+  50% {
+    transform: rotateX(0deg) rotateY(180deg);
+  }
+
+  100% {
+    transform: rotateX(180deg) rotateY(180deg);
+  }
+}
