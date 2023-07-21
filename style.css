@@ -2639,3 +2639,53 @@ h1 {
 #bg-translation-card:hover .content {
   color: white;
 }
+
+/* creative colorful layered menu effect */
+
+#colorful-layered {
+  margin: 0;
+  padding: 0;
+}
+
+#colorful-layered li {
+  list-style: none;
+}
+
+#colorful-layered li a {
+  position: relative;
+  display: block;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  font-size: 80px;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+#colorful-layered a:before,
+#colorful-layered a:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+#colorful-layered a:hover:before {
+  color: rgb(187, 0, 0);
+  z-index: 1;
+  -webkit-text-stroke: 1px black;
+  transform: translate(10px, -10px);
+}
+
+#colorful-layered a:hover:after {
+  color: rgb(119, 239, 255);
+  z-index: 2;
+  -webkit-text-stroke: 1px black;
+  transform: translate(20px, -20px);
+}
+
+#colorful-layered a:hover {
+  color: white;
+  -webkit-text-stroke: 1px black;
+  transition: 0.5s;
+}
