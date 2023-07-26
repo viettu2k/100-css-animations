@@ -2989,3 +2989,56 @@ h1 {
   transform-origin: right;
   transition-delay: 0.5s;
 }
+
+/* creative blurry menu effect */
+
+#blurry-menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+#blurry-menu li {
+  list-style: none;
+  margin: 0px 20px;
+  transition: 0.5s;
+}
+
+#blurry-menu a {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 22px;
+  color: white;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+#blurry-menu:hover a {
+  filter: blur(5px);
+  opacity: 0.2;
+}
+
+#blurry-menu a:hover {
+  transform: scale(1.5);
+  opacity: 1;
+  filter: blur(0);
+}
+
+#blurry-menu a:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ee5a24;
+  transition: 0.3s;
+  transform: scale(0);
+  z-index: -1;
+}
+
+#blurry-menu a:hover:before {
+  transform: scale(1);
+}
