@@ -3042,3 +3042,55 @@ h1 {
 #blurry-menu a:hover:before {
   transform: scale(1);
 }
+
+/* cool menu hover effect */
+
+#cool-menu {
+  padding: 0;
+  display: flex;
+}
+
+#cool-menu li {
+  list-style-type: none;
+  padding: 10px 20px;
+}
+
+#cool-menu a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #222;
+  position: relative;
+}
+
+#cool-menu li a:before {
+  content: '';
+  width: 0;
+  height: 5px;
+  background-color: #00bcd4;
+  position: absolute;
+  top: 120%;
+  left: 0;
+  transition: all 0.5s;
+}
+
+#cool-menu li a:after {
+  content: '';
+  width: 0;
+  height: 5px;
+  background-color: #f0f;
+  position: absolute;
+  top: 120%;
+  right: 0;
+  transition: all 0.5s;
+}
+
+#cool-menu li a:hover:before {
+  width: 50%;
+  transform: translateX(100%);
+}
+
+#cool-menu li a:hover:after {
+  width: 50%;
+  transform: translateX(-100%);
+}
