@@ -3376,3 +3376,89 @@ a {
   transform: translateY(0);
   transition-delay: 0.9s;
 }
+
+/* creative image hover effect 2 */
+
+#image-hover-effect2 {
+  width: 300px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+#image-hover-effect2 img {
+  width: 100%;
+}
+
+#image-hover-effect2:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  content: '';
+  background-color: #006266;
+}
+
+#image-hover-effect2 .caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: white;
+  text-transform: uppercase;
+}
+
+#image-hover-effect2 h2 {
+  text-align: center;
+  font-size: 17px;
+  padding: 20px;
+  margin-top: 20px;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#image-hover-effect2 a {
+  text-decoration: none;
+  background: #000;
+  color: #fff;
+  width: 100px;
+  padding: 15px;
+  margin-bottom: 20px;
+  align-self: center;
+}
+
+/* OUR EFFECT STYLES GOES HERE */
+#image-hover-effect2:before {
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+#image-hover-effect2:hover:before {
+  opacity: 1;
+}
+
+#image-hover-effect2 h2 {
+  transform: scale(10);
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+#image-hover-effect2:hover h2 {
+  opacity: 1;
+  transform: scale(1);
+  transition-delay: 0.2s;
+}
+
+#image-hover-effect2 a {
+  transform: translateY(150px);
+  transition: all 0.3s;
+}
+
+#image-hover-effect2:hover a {
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
