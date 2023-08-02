@@ -3314,7 +3314,7 @@ h1 {
   background: rgba(0, 0, 0, 0.8);
 }
 
-a {
+#image-hover-effect1 a {
   text-decoration: none;
   background: #000;
   color: #fff;
@@ -3360,11 +3360,6 @@ a {
 #image-hover-effect1:hover a {
   transform: translateY(0);
   transition-delay: 0.5s;
-}
-
-#image-hover-effect1:hover p {
-  transform: translateY(0);
-  transition-delay: 0.7s;
 }
 
 #image-hover-effect1 h2 {
@@ -3461,4 +3456,98 @@ a {
 #image-hover-effect2:hover a {
   transform: translateY(0);
   transition-delay: 0.2s;
+}
+
+/* creative image hover effect 3 */
+
+#image-hover-effect3 {
+  width: 300px;
+  height: 200px;
+  position: relative;
+}
+
+#image-hover-effect3 img {
+  width: 100%;
+}
+
+#image-hover-effect3:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  content: '';
+  background-color: #2d3436;
+  opacity: 0.8;
+}
+
+#image-hover-effect3 .caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: white;
+  text-transform: uppercase;
+}
+
+#image-hover-effect3 h2 {
+  text-align: center;
+  font-size: 17px;
+  padding: 20px;
+  margin-top: 20px;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#image-hover-effect3 a {
+  text-decoration: none;
+  background: #000;
+  color: #fff;
+  width: 100px;
+  padding: 15px;
+  margin-bottom: 20px;
+  align-self: center;
+}
+
+/* EFFECTS STYLES GOES HERE */
+
+#image-hover-effect3 {
+  background-color: #444;
+  border: 10px solid white;
+}
+
+#image-hover-effect3 img {
+  transition: all 0.5s;
+  transition-delay: 0.5s;
+}
+
+#image-hover-effect3:hover img {
+  transform: scale(0);
+  transition-delay: 0s;
+}
+
+#image-hover-effect3:before {
+  background-color: #006266;
+  transform: scale(0) rotate(-180deg);
+  transition: all 0.5s;
+}
+
+#image-hover-effect3:hover:before {
+  transform: scale(1) rotate(0deg);
+  transition-delay: 0.5s;
+}
+
+#image-hover-effect3 h2,
+#image-hover-effect3 a {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+#image-hover-effect3:hover h2,
+#image-hover-effect3:hover a {
+  opacity: 1;
+  transition-delay: 1s;
 }
