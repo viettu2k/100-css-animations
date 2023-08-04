@@ -3639,3 +3639,79 @@ h1 {
 #image-hover-effect4 {
   overflow: hidden;
 }
+
+/* Creative image hover effect 1 */
+
+#image-hover-effect5 {
+  width: 300px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+#image-hover-effect5 img {
+  width: 100%;
+}
+
+#image-hover-effect5:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120%;
+  height: 205%;
+  background-color: #2d3436;
+  opacity: 0.8;
+  transition: all 0.25s;
+  overflow: hidden;
+  transform: translate(550px, 300px) rotate(45deg);
+}
+
+#image-hover-effect5:hover:before {
+  transform: translate(-50px, -150px) rotate(45deg);
+}
+
+#image-hover-effect5 .caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: white;
+  text-transform: uppercase;
+}
+
+#image-hover-effect5 h2 {
+  text-align: center;
+  font-size: 17px;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: translate(200px, -200px);
+  transition: all 0.25s;
+}
+
+#image-hover-effect5:hover h2 {
+  transform: translate(0, 0);
+  transition-delay: 0.3s;
+}
+
+#image-hover-effect5 a {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  width: 100px;
+  padding: 15px;
+  margin-bottom: 20px;
+  align-self: center;
+  transition: all 0.25s;
+  transform: translateY(100px);
+}
+
+#image-hover-effect5:hover a {
+  transform: translateY(0);
+  transition-delay: 0.5s;
+}
