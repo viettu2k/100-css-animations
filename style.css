@@ -3999,3 +3999,67 @@ h1 {
 #image-transform-5:hover img {
   transform: scale(1.3) rotate(15deg);
 }
+
+/* swipe button */
+
+#swipe-button {
+  z-index: 2;
+  text-decoration: none;
+  position: relative;
+  width: 250px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  color: #250e74;
+  border: 4px solid #250e74;
+  font-size: 24px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+
+#swipe-button:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-top: 40px solid #250e74;
+  border-bottom: 40px solid #250e74;
+  border-right: 40px solid transparent;
+  transition: all 0.5s;
+  z-index: -1;
+  transform: translateX(-100%);
+  z-index: 1;
+}
+
+#swipe-button:hover:before {
+  transform: translateX(0%);
+  z-index: 0;
+}
+
+#swipe-button:after {
+  z-index: 1;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-top: 40px solid #250e74;
+  border-bottom: 40px solid #250e74;
+  border-left: 40px solid transparent;
+  transition: all 0.5s;
+  transform: translateX(100%);
+}
+
+#swipe-button:hover:after {
+  transform: translateX(0%);
+  z-index: 0;
+}
+
+#swipe-button:hover {
+  color: white;
+}
