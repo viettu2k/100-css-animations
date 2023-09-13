@@ -17,7 +17,7 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   gap: 8px 8px;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   grid-template-areas:
     '. . . . .'
@@ -1725,6 +1725,7 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   background: url(/assets/bg-text-animation.jpg);
+  background-clip: 'text';
   -webkit-background-clip: text;
   color: transparent;
   animation: text-background 20s linear infinite;
@@ -4183,6 +4184,7 @@ h1 {
 
 .btn-53 {
   -webkit-tap-highlight-color: transparent;
+  appearance: button;
   -webkit-appearance: button;
   background-color: #000;
   background-image: none;
@@ -4195,6 +4197,7 @@ h1 {
   line-height: 1.5;
   margin: 0;
   -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  mask-image: -webkit-radial-gradient(#000, #fff);
   padding: 0;
 }
 
@@ -4208,7 +4211,7 @@ h1 {
 
 .btn-53 svg {
   display: block;
-  vertical-align: middle;
+  /* vertical-align: middle; */
 }
 
 .btn-53 [hidden] {
